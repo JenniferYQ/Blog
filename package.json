@@ -1,0 +1,22 @@
+{
+  "name": "blog-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "前端知识学习记录的Monorepo仓库",
+  "scripts": {
+    "dev:vue": "pnpm --filter vue-lib run dev",
+    "dev:react": "pnpm --filter react-lib run dev",
+    "build": "pnpm -r run build"
+  },
+  "keywords": [
+    "monorepo",
+    "vue",
+    "react",
+    "frontend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pnpm": "^10.15.0"
+  }
+}

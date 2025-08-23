@@ -1,0 +1,77 @@
+# 依赖目录
+node_modules/
+.pnpm-store/
+
+# 针对monorepo中各个包的特定忽略
+packages/*/node_modules/
+packages/*/.turbo
+packages/*/.cache
+packages/*/dist
+packages/*/build
+packages/*/.next
+packages/*/.nuxt
+packages/*/.output
+packages/*/.vite
+
+# 构建输出
+dist/
+build/
+lib/
+out/
+
+# 日志文件
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器目录和文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+packages/*/.env
+packages/*/.env.local
+packages/*/.env.development.local
+packages/*/.env.test.local
+packages/*/.env.production.local
+
+# 测试覆盖率
+coverage/
+packages/*/coverage/
+
+# Vue特定
+.nuxt
+.nitro
+.cache
+.output
+
+# React特定
+.eslintcache
+
+# 临时文件
+.temp
+.tmp
+.cache/
+
+# 锁文件 (可选择保留其中一种)
+# yarn.lock
+# package-lock.json
+# 保留pnpm-lock.yaml因为项目使用pnpm
+
+# 其他
+.DS_Store
+Thumbs.db
